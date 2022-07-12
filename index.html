@@ -8,23 +8,32 @@
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>ffmpeg guru</title>
   </head>
   <body>
     <div class="container">
         <div class="row justify-content-md-center mt-5">
             
           <div class="col-md-auto">
-            <form class="row g-3" id="form">
-              <div class="col-12">
+            <form class="row g-3 justify-content-md-center" id="form">
+              <div class="col-8">
                 <label for="action" class="form-label">What would you like to do?</label>
                 <select name="action" id="action" class="form-control">
                   <option>-- Select an option --</option>
                 </select>
               </div>
-              <div id="fields"></div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Generate</button>
+              <div class="col-8">
+                <div id="fields" class="row">
+
+                </div>
+              </div>
+              <div class="col-8">
+                <textarea class="form-control" id="command" style="display: none;"></textarea>
+              </div>
+                <div class="col-8">
+                  <div class="text-center">
+                    <button type="submit" id="generate" class="btn btn-dark col-4">Generate</button>
+                  </div>
                 </div>
               </form>
           </div>
