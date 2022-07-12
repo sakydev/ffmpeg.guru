@@ -1,1 +1,2 @@
-# ffmpeg.guru
+# ffmpeg guru
+Simplest ffmpeg commands generator
