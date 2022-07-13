@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .container
+  .row.justify-content-md-center.mt-5
+    .col-md-auto
+      form#form.row.g-3.justify-content-md-center
+        .col-8
+          label.form-label(for='action') What would you like to do?
+          select#action.form-control(name='action')
+            option -- Select an option --
+        .col-8
+          #fields.row
+        .col-8
+          textarea#command.form-control(style='display: none;')
+        .col-8
+          .text-center
+            button#generate.btn.btn-dark.col-4(type='submit') Generate
