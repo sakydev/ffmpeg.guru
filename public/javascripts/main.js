@@ -1,6 +1,6 @@
 $(document).ready(function() {
     const action = getAction();
-    const skeleton = getSkeleton();
+    const skeleton = JSON.parse($('#skeleton').val());
     const defaultplaceholder = '{{__defaults__}}';
     let requiredFields = [];
     
